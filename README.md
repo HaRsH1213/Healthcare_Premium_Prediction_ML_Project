@@ -124,10 +124,13 @@ Target Variable:
 Healthcare_Premium_Prediction_ML_Project/
 │
 ├── 📁 datasets/
+│   ├── premiums.xlsx                        # Orginal data before segmentation
+│   ├── premiums_young.xlsx                  # Young customer data (≤25) without genetical risk feature
 │   ├── premiums_young_with_gr.xlsx          # Young customer data (≤25)
 │   └── premiums_rest.xlsx                   # Older customer data (>25)
 │
 ├── 📁 notebooks/
+│   ├── ml_premium_prediction_1                    # Model Training notebook before segmentation
 │   ├── ml_premium_prediction_young_with_gr.ipynb  # Young model training
 │   └── ml_premium_prediction_rest_with_gr.ipynb   # REST model training
 │
@@ -136,6 +139,10 @@ Healthcare_Premium_Prediction_ML_Project/
 │   ├── model_rest.joblib                    # Trained REST model
 │   ├── scaler_young.joblib                  # Young group scaler
 │   └── scaler_rest.joblib                   # REST group scaler
+├── 📁 assests/
+│   ├── dashboard.png                        # Dashboard Preview
+│   ├── sample_1.png                         # Sample test for Young Age Group
+│   └── sample_2.png                         # Sample test for Older Age Group
 │
 ├── 📄 prediction_helper.py                  # Model inference logic
 ├── 📄 main.py                               # Streamlit UI application
@@ -317,6 +324,11 @@ param_grid = {
 
 ## Web Application Dashboard
 
+Here is a preview of the Healthcare Premimum Prediction dashboard:
+
+
+![dashboard](assests\dashboard.png)
+
 
 ---
 
@@ -414,6 +426,8 @@ Medical History: No Disease
 Insurance Plan: Silver
 ```
 
+![sample_1](assests\sample_1.png)
+
 **Sample 2: Older Customer**
 ```
 Age: 45
@@ -430,6 +444,7 @@ Medical History: Diabetes & High Blood Pressure
 Insurance Plan: Gold
 ```
 
+![sample_2](assests\sample_2.png)
 ---
 
 ## Final Recommendations
@@ -480,32 +495,7 @@ Insurance Plan: Gold
    - Bias detection & mitigation
    - Explainability documentation
 
-### 📊 Monitoring & Maintenance
 
-**Monthly Tasks**:
-```bash
-✅ Monitor prediction accuracy
-✅ Track error distributions
-✅ Analyze feature drift
-✅ Update business rules if needed
-✅ Document anomalies
-```
-
-**Quarterly Tasks**:
-```bash
-✅ Retrain models with new data
-✅ Compare performance across models
-✅ Update hyperparameters if needed
-✅ Audit for bias & fairness
-```
-
-**Annual Tasks**:
-```bash
-✅ Major model review & updates
-✅ Incorporate new features
-✅ Compliance audits
-✅ Strategic alignment review
-```
 
 ### 🛠️ Troubleshooting
 
@@ -540,7 +530,7 @@ Solution:
 
 **Project Lead**: [Harsh Chauhan]
 **Email**: [hc063213@gmail.com]
-**LinkedIn**: [your-linkedin-profile]
+**LinkedIn**: [www.linkedin.com/in/harsh-chauhan-6259a9207]
 
 ### 📞 Support
 
@@ -556,9 +546,8 @@ This project is licensed under the MIT License - see LICENSE.md for details.
 
 ### 🙏 Acknowledgments
 
-- Data source: [Your source]
+- Data source: [[Codebasics](https://codebasics.io/)]
 - Libraries: Scikit-learn, XGBoost, Pandas, Streamlit
-- Inspiration: [References if any]
 
 ---
 
