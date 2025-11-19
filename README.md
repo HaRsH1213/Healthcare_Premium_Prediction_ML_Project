@@ -327,7 +327,7 @@ param_grid = {
 Here is a preview of the Healthcare Premimum Prediction dashboard:
 
 
-![dashboard](assests\dashboard.png)
+![dashboard](assests/dashboard.png)
 
 
 ---
@@ -426,7 +426,7 @@ Medical History: No Disease
 Insurance Plan: Silver
 ```
 
-![sample_1](assests\sample_1.png)
+![sample_1](assests/sample_1.png)
 
 **Sample 2: Older Customer**
 ```
@@ -444,7 +444,7 @@ Medical History: Diabetes & High Blood Pressure
 Insurance Plan: Gold
 ```
 
-![sample_2](assests\sample_2.png)
+![sample_2](assests/sample_2.png)
 ---
 
 ## Final Recommendations
